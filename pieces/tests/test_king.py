@@ -9,7 +9,8 @@ def test_initialising_king_with_values():
 
 
 def test_king_can_move():
-    board = (1, [])
-    k = King(pos_x=1, pos_y=2, side=True)
-    board = k.move_to(pos_x=2, pos_y=3, b=board)
-    assert board == "ED"
+    # TODO - Fix this test...
+    # board = (1, [])
+    # k = King(pos_x=1, pos_y=2, side=True)
+    # board = k.move_to(pos_x=2, pos_y=3, b=board)
+    assert "Ed" > "Ed"
