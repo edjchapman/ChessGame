@@ -58,12 +58,12 @@ def main() -> None:
             quit()
             break
         else:
-            black_piece, pos_X, pos_Y = find_black_move(B)
+            black_piece, pos_x, pos_y = find_black_move(B)
             bp_start_coords = index2location(black_piece.pos_x, black_piece.pos_y)
-            bp_end_coords = index2location(pos_X, pos_Y)
+            bp_end_coords = index2location(pos_x, pos_y)
             print(f'''Next move of Black is {bp_start_coords}{bp_end_coords}.''')
             print('''The configuration after Black's move is:''')
-            print(conf2unicode(black_piece.move_to(pos_X, pos_Y, B)))
+            print(conf2unicode(black_piece.move_to(pos_x, pos_y, B)))
 
     if is_checkmate(True, B):
         print('Game over. Black wins.')
