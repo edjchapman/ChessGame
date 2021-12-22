@@ -15,5 +15,6 @@ pip install -r requirements.txt
 ## Run Tests
 
 ```shell
+source venv/bin/activate
 pytest
 ```
